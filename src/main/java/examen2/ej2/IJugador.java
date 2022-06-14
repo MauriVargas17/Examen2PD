@@ -6,4 +6,5 @@ public interface IJugador {
     String getRanking();
 
     void receive(String s, IJugador sender);
+
 }

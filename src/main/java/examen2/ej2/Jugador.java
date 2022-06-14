@@ -14,11 +14,15 @@ public class Jugador implements IJugador{
     }
 
     public void send(String msg){
-        chat.send(msg, this, null);
+        chat.send(msg, this, null, "");
     }
 
     public void send(String msg, IJugador receptor){
-        chat.send(msg, this, receptor);
+        chat.send(msg, this, receptor, "");
+    }
+
+    public void sendAll(String msg, String sala){
+        chat.send(msg, this, null, sala);
     }
 
     public void receive(String msg, IJugador sender){
