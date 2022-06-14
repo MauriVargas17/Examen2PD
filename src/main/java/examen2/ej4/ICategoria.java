@@ -1,5 +1,5 @@
 package examen2.ej4;
 
 public interface ICategoria {
-    void ordenar(Estudiante[] estudiantes);
+    Estudiante[] ordenar(Estudiante[] estudiantes);
 }
